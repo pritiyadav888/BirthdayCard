@@ -2,7 +2,8 @@ div img{
     
     width: 500px;
     height: 300px;
-   
+    /* border-style: groove; */
+    border: chartreuse groove 5px;
     /* padding: auto; */
     display: block;
     margin-left: auto;
@@ -67,7 +68,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(212, 190, 69);  
+  background-color: rgb(69, 212, 188);  
   text-align: center;
 }
  button :hover .first {
@@ -255,6 +256,8 @@ body{
       border: 3px solid rgb(0, 180, 230);
       box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
       0 0 12px -1px rgb(0, 180, 230) inset;
+      background-color: blue;
+      
     }
   }
 
@@ -299,10 +302,12 @@ body{
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: rgb(36, 23, 23);
-    
-    
-    background-size: contain;
+    box-sizing: content-box;
+    width: 80%;
+    padding: 22px;
+    /* background-size: contain; */
     background-position: center center;
+    border: 10px solid rgb(208, 255, 0) ;
   }
   
   /* Style the back side */
@@ -313,10 +318,14 @@ body{
     text-align: center;
   }
   .card-img-top {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
     object-fit:cover;
-    border: 2px solid red ;
+    border: 5px solid red ;
+   
+    
+    /* border: solid #5B6DCD 10px; */
+   
 }
  .size{
     margin-left: 0;
